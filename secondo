@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sentinel Diagnostics — Innovazione e Precisione</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --accent: #d93b2b;
+      --muted: #6b7280;
+      --glass: rgba(255,255,255,0.6);
+      --maxw: 1100px;
+      --banner-height: 90px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Inter, system-ui, Segoe UI, Arial; background: var(--bg); color: #0f172a; }
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: var(--maxw); margin: 40px auto; padding: 20px; }
+    header { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+    header img { height: 48px; }
+    header .tagline { font-size: 13px; color: var(--muted); }
+
+    /* HERO */
+    .hero { display: grid; grid-template-columns: 1fr 420px; gap: 28px; align-items: center; }
+    .hero .left { padding: 28px; background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4)); border-radius: 12px; box-shadow: 0 8px 20px rgba(13,16,30,0.06); }
+    .kicker { display: inline-block; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+    h1 { font-size: 32px; margin-bottom: 12px; }
+    p.lead { color: var(--muted); margin-bottom: 22px; line-height: 1.5; }
+    .cta-row { display: flex; gap: 12px; }
+    .btn { padding: 12px 16px; border-radius: 10px; border: 0; cursor: pointer; font-weight: 600; }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-ghost { background: transparent; border: 1px solid rgba(15,23,42,0.08); color: #0f172a; }
+    .card-metrics { display: flex; gap: 12px; margin-top: 20px; }
+    .metric { background: var(--card); padding: 12px; border-radius: 10px; min-width: 120px; box-shadow: 0 6px 18px rgba(12,15,20,0.04); }
+    .metric b { display: block; font-size: 18px; }
+    .metric span { font-size: 12px; color: var(--muted); }
+
+    .hero .right { min-height: 280px; border-radius: 12px; overflow: hidden; }
+    .hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* PRODUCTS grid */
+    .grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-top: 34px; }
+    .product { background: var(--card); padding: 14px; border-radius: 10px; box-shadow: 0 6px 18px rgba(12,15,20,0.04); display: flex; gap: 12px; align-items: center; }
+    .product img { width: 88px; height: 88px; object-fit: contain; border-radius: 8px; background: linear-gradient(180deg,#fff,#fbfdff); }
+    .product h4 { margin-bottom: 6px; font-size: 16px; }
+    .product p { margin: 0; color: var(--muted); font-size: 13px; }
+
+    /* Footer */
+    footer { margin-top: 34px; text-align: center; color: var(--muted); font-size: 13px; }
+
+    /* Banner styles */
+    .banner { position: relative; background: var(--accent); color: #fff; display: inline-block; overflow: hidden; }
+    .banner img { display: block; width: 100%; height: auto; object-fit: cover; }
+    .banner .overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; padding: 10px; text-align: center; }
+    .banner .overlay h2 { font-size: 20px; margin-bottom: 8px; }
+    .banner .overlay a { background: #fff; color: var(--accent); padding: 8px 12px; border-radius: 6px; font-weight: 600; font-size: 14px; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/sentinel-logo.png" alt="Sentinel Diagnostics Logo">
+      <div class="tagline">Innovazione | Qualità | Affidabilità</div>
+    </header>
+
+    <!-- Banner Leaderboard (728x90) -->
+    <div class="banner" style="width:100%; max-width:728px; height:var(--banner-height); margin: 0 auto 24px;">
+      <img src="assets/sentinel-banner-728x90.jpg" alt="Sentinel Diagnostics Banner">
+      <div class="overlay">
+        <h2>Soluzioni diagnostiche all’avanguardia</h2>
+        <a href="https://www.sentineldiagnostics.com" target="_blank" rel="noopener">Visita Sentinel</a>
+      </div>
+    </div>
+
+    <section class="hero" aria-label="Hero">
+      <div class="left">
+        <div class="kicker">Per professionisti del laboratorio</div>
+        <h1>Soluzioni diagnostiche che parlano la lingua della precisione</h1>
+        <p class="lead">Kit e reagenti per chimica clinica, immunologia e biologia molecolare — progettati in Italia con certificazioni internazionali, per garantire risultati accurati e riproducibili. ISO-certificazione, oltre 40 anni di esperienza, ricerca continua e standard globali.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://www.sentineldiagnostics.com/wp-content/uploads/download/CatalogueEN.pdf" target="_blank">Scarica catalogo</a>
+          <a class="btn btn-ghost" href="https://www.sentineldiagnostics.com/it/contattaci/" target="_blank">Contattaci</a>
+        </div>
+
+        <div class="card-metrics">
+          <div class="metric"><b>ISO 13485</b><span>Qualità certificata</span></div>
+          <div class="metric"><b>Dal 1983</b><span>Esperienza consolidata</span></div>
+          <div class="metric"><b>R&D</b><span>Innovazione continua</span></div>
+        </div>
+      </div>
+
+      <div class="right">
+        <img src="assets/sentinel-hero.jpg" alt="Sentinel Lab / Office">
+      </div>
+    </section>
+
+    <main>
+      <h2 style="margin-top:34px">Prodotti selezionati</h2>
+      <div class="grid">
+        <article class="product">
+          <img src="assets/product-1.jpg" alt="Kit diagnostico">
+          <div>
+            <h4>Kit Chimica Clinica</h4>
+            <p>Reagenti pronti all'uso per analizzatori automatici, alta stabilità.</p>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="assets/product-2.jpg" alt="Reagenti e calibratori">
+          <div>
+            <h4>Calibratori & Controlli</h4>
+            <p>Materiali di riferimento certificati per tarature e QA.</p>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="assets/team.jpg" alt="Team Sentinel">
+          <div>
+            <h4>Assistenza & Supporto</h4>
+            <p>Customer service dedicato per pre e post vendita.</p>
+          </div>
+        </article>
+      </div>
+
+      <section style="margin-top:28px; background:var(--card); padding:18px; border-radius:12px; box-shadow:0 6px 18px rgba(12,15,20,0.04)">
+        <h3>Materiale tecnico & scientifico</h3>
+        <p style="margin:8px 0; color: var(--muted)">Consulta il catalogo completo e le schede tecniche dei prodotti sul sito ufficiale.</p>
+        <a class="btn btn-ghost" href="https://www.sentineldiagnostics.com/wp-content/uploads/download/CatalogueEN.pdf" target="_blank">Scarica PDF catalogo</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© Sentinel Diagnostics — Contenuto realizzato per finalità promozionali. Destinato al personale sanitario specializzato.</p>
+    </footer>
+  </div>
+</body>
+</html>
